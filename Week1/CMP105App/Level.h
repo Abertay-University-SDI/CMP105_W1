@@ -1,11 +1,12 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include "Framework/BaseLevel.h"
 #include <string.h>
 #include <iostream>
 
 
-class Level{
+class Level : BaseLevel{
 public:
 	Level(sf::RenderWindow* hwnd);
 	~Level();
@@ -15,10 +16,7 @@ public:
 	void render();
 
 private:
-	void beginDraw();
-	void endDraw();
-	sf::RenderWindow* window;
-
+	// Declare level variables here:
 	sf::RectangleShape rect;
 	sf::CircleShape circle;
 };

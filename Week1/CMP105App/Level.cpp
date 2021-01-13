@@ -5,7 +5,7 @@ Level::Level(sf::RenderWindow* hwnd)
 	window = hwnd;
 
 	// initialise game objects
-	rect.setSize(sf::Vector2f(50, 5));
+	rect.setSize(sf::Vector2f(50, 50));
 	rect.setPosition(100, 100);
 	rect.setFillColor(sf::Color::Red);
 }
@@ -32,15 +32,4 @@ void Level::render()
 	beginDraw();
 
 	endDraw();
-}
-
-void Level::beginDraw()
-{
-	window->clear(sf::Color(100, 149, 237));
-}
-
-// Ends rendering to the back buffer, and swaps buffer to the screen.
-void Level::endDraw()
-{
-	window->display();
 }

@@ -157,11 +157,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Framework\BaseLevel.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Framework\BaseLevel.h" />
     <ClInclude Include="Level.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Framework\DO_NOT_EDIT.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
