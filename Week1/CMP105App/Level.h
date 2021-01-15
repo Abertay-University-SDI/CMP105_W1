@@ -11,9 +11,9 @@ public:
 	Level(sf::RenderWindow* hwnd);
 	~Level();
 
-	void handleInput();
-	void update();
-	void render();
+	void handleInput() override;
+	void update() override;
+	void render() override;
 
 private:
 	// Declare level variables here:
